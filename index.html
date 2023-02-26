@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochila de viagem</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <script src="./js/adicionaritem.js" defer></script>
+    <script src="./js/adicionardestino.js" defer></script>
+</head>
+<body>
+    <div data-header class="titulo"></div>
+    <main class="conteudo">
+        <div class="principal">
+            <div class="mochila"></div>
+            <form action="" data-titulo class="adicionar">
+                <label for="">Seu nome</label>
+                <input type="text" name="nomepessoa" id="nomepessoa" required>
+                <label for="">Destino</label>
+                <input type="text" name="destino" id="destino" required>
+                <label for="">Data</label>
+                <input type="date" name="data" id="data" required>
+                <input type="submit"  value="Adicionar" class="cadastrar">
+            </form>
+            <form action="" data-form class="adicionar">
+                <label for="nome">Item</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="quantidade">Quantidade</label>
+                <input type="number" name="quantidade" id="quantidade" required>
+                <input type="submit"  value="Adicionar" class="cadastrar">
+            </form>
+        </div>
+    </main>
+    <ul class="lista" data-lista>
+    </ul>
+</body>
+</html>

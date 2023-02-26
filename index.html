@@ -14,29 +14,31 @@
     <script src="./js/adicionardestino.js" defer></script>
 </head>
 <body>
-    <div data-header class="titulo"></div>
-    <main class="conteudo">
-        <div class="principal">
-            <div class="mochila"></div>
-            <form action="" data-titulo class="adicionar">
-                <label for="">Seu nome</label>
-                <input type="text" name="nomepessoa" id="nomepessoa" required>
-                <label for="">Destino</label>
-                <input type="text" name="destino" id="destino" required>
-                <label for="">Data</label>
-                <input type="date" name="data" id="data" required>
-                <input type="submit"  value="Adicionar" class="cadastrar">
-            </form>
-            <form action="" data-form class="adicionar">
-                <label for="nome">Item</label>
-                <input type="text" name="nome" id="nome" required>
-                <label for="quantidade">Quantidade</label>
-                <input type="number" name="quantidade" id="quantidade" required>
-                <input type="submit"  value="Adicionar" class="cadastrar">
-            </form>
+    <main>
+        <div class="conteudo">
+            <div class="principal">
+                <div class="mochila"></div>
+                <form action="" data-titulo class="adicionar">
+                    <label for="">Seu nome</label>
+                    <input type="text" name="nomepessoa" id="nomepessoa" required>
+                    <label for="">Destino</label>
+                    <input type="text" name="destino" id="destino" required>
+                    <label for="">Data</label>
+                    <input type="date" name="data" id="data" required>
+                    <input type="submit"  value="Adicionar" class="cadastrar">
+                </form>
+                <form action="" data-form class="adicionar">
+                    <label for="nome">Item</label>
+                    <input type="text" name="nome" id="nome" required>
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" required>
+                    <input type="submit"  value="Adicionar" class="cadastrar">
+                </form>
+            </div>
         </div>
+        <div data-header class="titulo"></div>
+        <ul class="lista" data-lista>
+        </ul>
     </main>
-    <ul class="lista" data-lista>
-    </ul>
 </body>
 </html>

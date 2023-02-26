@@ -56,4 +56,5 @@ function deletaViagem(tag){
     tag.remove()
     viagens.shift()
     localStorage.setItem("viagem", JSON.stringify(viagens))
+    document.location.reload(true)
 }

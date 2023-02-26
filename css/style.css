@@ -1,5 +1,4 @@
 html {
-    background: #FFFFFF;
     height: 100%;
     font-family: 'Roboto', cursive;
 }
@@ -15,7 +14,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -5em;
+    margin-bottom: -2em;
 }
 
 .titulo h1{
@@ -168,3 +167,52 @@ html {
     box-shadow: 1px 1px 2px rgb(60, 60, 60, 0.5);
 }
 
+@media (max-width: 600px){
+
+    .conteudo {
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .principal {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    }
+
+    .mochila{
+        display: none;
+    }
+
+    .titulo h1{
+        font-size: 25px;
+    }
+    
+    .lista {
+        margin: 45px 0;
+    }
+
+    .item {
+        padding: 0.6em 1em;
+        margin: 0 0 1em;
+        gap: 1em;
+    }
+
+    .item strong {
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        Background: #FFFFFF;
+        font-weight: 400;
+    }
+
+    .item button{
+        margin-left: 10em;
+    }
+    
+}
